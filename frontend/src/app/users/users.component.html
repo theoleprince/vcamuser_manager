@@ -1,0 +1,139 @@
+
+<!--begin team section -->
+<section class="top-shape-wrapper">
+
+    <!--begin top-shape section -->
+      <div class="top-shape" id="team">
+
+        <!--begin container-->
+        <div class="container">
+
+            <!--begin row-->
+            <div class="row">
+          
+                <!--begin col-md-12 -->
+                <div class="col-md-12 text-center">
+
+                    <h2 class="section-title">Liste des utilisateurs</h2>
+
+                    <a href="#about" class="btn-green scrool">Ajouter un nouvel utilisateur</a>
+                    
+                </div>
+                <!--end col-md-12 -->
+                
+                <!--begin team-item -->
+                <div *ngFor="let user of users" class="col-sm-12 col-md-4">
+
+                    <div class="team-item">
+                    
+                        <img *ngIf="user.avatar" src='{{ user.avatar }}' class="team-img" alt="pic">
+                        <img *ngIf="!user.avatar" src='http://placehold.it/200x200' class="team-img" alt="pic">
+                       
+                        <h3>{{ user.getName() }}</h3>
+                        
+                        <div class="team-info"><p>{{ user.job }}</p></div>
+
+                        <!-- <p>{{ user.description }}</p> -->
+                    
+                        <ul class="team-icon">
+                            
+                            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+		                        
+		                        <li><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
+		                        
+		                        <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+		                        
+		                        <li><a href="#" class="dribble"><i class="fa fa-dribbble"></i></a></li>
+                            
+                        </ul>
+                        
+                    </div>
+
+                </div>
+                <!--end team-item -->
+                <section class="section-grey small-padding-top" id="about">
+
+                    <!--begin container -->
+                    <div class="container">
+            
+                        <!--begin row -->
+                        <div class="row">
+            
+                            <!--begin col-md-12 -->
+                            <div class="col-md-12 text-center">
+            
+                                <h2 class="section-title">How It Works</h2>
+            
+                                <p class="section-subtitle">There are many variations of passages of Lorem Ipsum available, but the majority<br>have suffered alteration, by injected humour, or new randomised words.</p>
+                                
+                            </div>
+                            <!--end col-md-12 -->
+            
+                            <!--begin col-md-4 -->
+                            <div class="col-md-4">
+            
+                                <div class="main-services">
+            
+                                    <img src="http://placehold.it/100x100" class="width-100" alt="pic">
+            
+                                    <h3>Search Oportunities</h3>
+            
+                                    <p>Curabitur quam etsum lacus etsumis nulat iaculis ets vitae etsum nisle varius sed aliquam ets vitae dictis netsum.</p>
+                                    
+                                </div>
+            
+                            </div>
+                            <!--end col-md-4 -->
+            
+                            <!--begin col-md-4 -->
+                            <div class="col-md-4">
+            
+                                <div class="main-services">
+            
+                                    <img src="http://placehold.it/100x100" class="width-100" alt="pic">
+            
+                                    <h3>Reach Clients</h3>
+            
+                                    <p>Curabitur quam etsum lacus etsumis nulat iaculis ets vitae etsum nisle varius sed aliquam ets vitae dictis netsum.</p>
+                                    
+                                </div>
+            
+                            </div>
+                            <!--end col-md-4 -->
+            
+                            <!--begin col-md-4 -->
+                            <div class="col-md-4">
+            
+                                <div class="main-services">
+            
+                                    <img src="http://placehold.it/100x100" class="width-100" alt="pic">
+            
+                                    <h3>Get Rewarded</h3>
+            
+                                    <p>Curabitur quam etsum lacus etsumis nulat iaculis ets vitae etsum nisle varius sed aliquam ets vitae dictis netsum.</p>
+                                    
+                                </div>
+            
+                            </div>
+                            <!--end col-md-4 -->
+                       
+                        </div>
+                        <!--end row -->
+                        
+                    </div>
+                    <!--end container -->
+            
+                </section>
+			
+            
+            </div>
+            <!--end row-->
+        
+        </div>
+        <!--end container-->
+
+    </div>
+    <!--end top-shape section -->
+
+  </section>
+  <!--end team section -->
